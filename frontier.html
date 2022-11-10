@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Frontier</title>
+        <script src="ruffle/ruffle.js"></script>
+    </head>
+    <body>
+        <script src="ruffle/ruffle.js"></script>
+        <div id="container"></div>
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.addEventListener("load", (event) => {
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                const container = document.getElementById("container");
+                container.appendChild(player);
+                player.load({
+                    url: "games/frontier.swf",
+                    backgroundColor: "#000",
+                 });
+                player.style.width = "450px";
+                player.style.height = "450px";
+             });
+        </script>
+    </body>
+</html>
