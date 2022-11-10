@@ -1,1 +1,25 @@
-
+<html>
+    <head>
+        <title>Frontier</title>
+        <script src="ruffle/ruffle.js"></script>
+    </head>
+    <body>
+        <script src="ruffle/ruffle.js"></script>
+        <div id="container"></div>
+        <script>
+            window.RufflePlayer = window.RufflePlayer || {};
+            window.addEventListener("load", (event) => {
+                const ruffle = window.RufflePlayer.newest();
+                const player = ruffle.createPlayer();
+                const container = document.getElementById("container");
+                container.appendChild(player);
+                player.load({
+                    url: "games/army-of-ages-11789fdd9.swf",
+                    backgroundColor: "#000",
+                 });
+                player.style.width = "getWidth()";
+                player.style.height = "getHeight()";
+             });
+        </script>
+    </body>
+</html>
