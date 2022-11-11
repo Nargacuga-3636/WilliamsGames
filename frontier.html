@@ -1,29 +1,30 @@
-<html>
-    <head>
-        <title>Frontier</title>
-        <script src="ruffle/ruffle.js"></script>
-    </head>
-    <body>
-        <script src="ruffle/ruffle.js"></script>
-        <div id="container" style="text-align: center;"></div>
-        <script>
-            window.RufflePlayer = window.RufflePlayer || {};
-            window.addEventListener("load", (event) => {
-                const ruffle = window.RufflePlayer.newest();
-                const player = ruffle.createPlayer();
-                const container = document.getElementById("container");
-                container.appendChild(player);
-                player.load({
-                    url: "games/frontier-44809cba.swf",
-                    backgroundColor: "#000",
-                 });
-                var screenX = window.getWidth()
-                var screenY = window.getHeight()
-                screenX = screenX.toString()
-                screenY = screenY.toString()
-                player.style.width = screenX;
-                player.style.height = screenY;
-             });
-        </script>
-    </body>
-</html>
+<!DOCTYPE html>
+    <html>
+        <head>
+            <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+            <title>Frontier</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <script src="ruffle/ruffle.js"></script>
+        </head>
+        <body>
+            <script src="ruffle/ruffle.js"></script>
+            <div class="w3-bar w3-blue-gray">
+                <h1 class="w3-bar-item">William's Game Site</h1>
+                <a href="index.html" class="w3-bar-item w3-button">Home</a>
+                <a href="frontier.html" class="w3-bar-item w3-button">Frontier</a>
+            </div>
+            <div id="container" class="w3-card" style="width:window.innerwidth height:window.innerheight">
+                <script>
+                    window.RufflePlayer = window.RufflePlayer || {};
+                    window.addEventListener("load", (event) => {
+                        const ruffle = window.RufflePlayer.newest();
+                        const player = ruffle.createPlayer();
+                        const container = document.getElementById("container");
+                        container.appendChild(player);
+                        player.load(url: "games/frontier-44809cba.swf")
+                </script>
+                <h2>Frontier</h2>
+            </div>
+        </body>
+    </html>
