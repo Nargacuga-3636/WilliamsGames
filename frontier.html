@@ -3,29 +3,32 @@
         <head>
             <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
             <title>Frontier</title>
+            <script src="ruffle/ruffle.js"></script>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width,initial-scale=1">
         </head>
         <body>
-            <script src="ruffle/ruffle.js"></script>
+
             <div class="w3-bar w3-blue-gray">
                 <h1 class="w3-bar-item">William's Game Site</h1>
                 <a href="index.html" class="w3-bar-item w3-button">Home</a>
-                <a href="frontier.html" class="w3-bar-item w3-button">Frontier</a>
             </div>
-            <div id="container">
+            <div id="container" class="w3-card"> </div>
+            <script src="ruffle/ruffle.js"></script>
                 <script>
                     window.RufflePlayer = window.RufflePlayer || {};
                     window.addEventListener("load", (event) => {
                         const ruffle = window.RufflePlayer.newest();
                         const player = ruffle.createPlayer();
-                        const container = document.getElementById("container");
+                        const container = document.getElementById("container"); 
                         container.appendChild(player);
-                        player.load(url: "games/frontier-44809cba.swf")
-                        player.style.width = window.style.width
-                        player.style.height = window.style.height
+                        player.load({
+                            url: "games/frontier-44809cba.swf", 
+                            backgroundColor: "#000", 
+                         });
+                        player.style.width = window.style.width; 
+                        player.style.height = window.style.height;
+                    });
                 </script>
-                <div class="w3-card"><h2>Frontier</h2></div>
-            </div>
         </body>
     </html>
