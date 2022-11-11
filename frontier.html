@@ -13,7 +13,7 @@
                 <h1 class="w3-bar-item">William's Game Site</h1>
                 <a href="index.html" class="w3-bar-item w3-button">Home</a>
             </div>
-            <div id="container" class="w3-card"> </div>
+            <div id="container" class="w3-card w3-cell-middle"> </div>
             <script src="ruffle/ruffle.js"></script>
                 <script>
                     window.RufflePlayer = window.RufflePlayer || {};
@@ -26,8 +26,8 @@
                             url: "games/frontier-44809cba.swf", 
                             backgroundColor: "#000", 
                          });
-                        player.style.width = window.style.width; 
-                        player.style.height = window.style.height;
+                        player.style.width = screen.width; 
+                        player.style.height = screen.height;
                     });
                 </script>
         </body>
